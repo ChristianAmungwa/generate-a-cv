@@ -23,6 +23,7 @@ def accept(request):
         profile = Profile(name=name,email=email,phone=phone,summary=summary,degree=degree,school=school,university=university,previous_work=previous_work,skills=skills)
         profile.save() # this saves any entered data into the backend database
 # "profile" above is an object of the class model "Profile", which os found in models.py        .
+#Testing
     
     return render(request,'pdf/accept.html')
 
